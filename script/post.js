@@ -1,0 +1,10 @@
+let item = localStorage.getItem("id");
+        let data= JSON.parse(item)
+        let number= document.getElementById("number")
+        let title = document.getElementById("title")
+        let content= document.getElementById("content") 
+        let postNumber= document.getElementById("postNumber") 
+        number.innerText= data.id;
+        title.innerText= data.title;
+        content.innerText=data.body
+        postNumber.innerText=`Post ${data.id}`
